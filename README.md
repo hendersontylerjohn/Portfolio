@@ -2,7 +2,7 @@
 
 Personal portfolio for **Tyler Henderson** - Fenestration Technical Lead (NFRC compliance & standards strategy).
 
-Live site: **https://hendersontylerjohn.github.io/Portfolio**
+Live site: **https://hendersontylerjohn.github.io**
 
 ## Stack
 
