@@ -1,0 +1,6 @@
+# Original source documents (clean copies are published from assets/)
+/*.pdf
+
+# OS cruft
+Thumbs.db
+.DS_Store
