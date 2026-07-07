@@ -47,6 +47,40 @@
     }
   });
 
+  /* ----- Language toggle (EN/FR), no page reload so scroll position is kept ----- */
+  var langToggle = document.getElementById("langToggle");
+  var textNodes = document.querySelectorAll(".i18n");
+  var hrefNodes = document.querySelectorAll(".i18n-href");
+  var ariaNodes = document.querySelectorAll(".i18n-aria");
+
+  function applyLang(lang) {
+    document.documentElement.lang = lang;
+    textNodes.forEach(function (el) {
+      var value = el.dataset[lang];
+      if (value !== undefined) el.innerHTML = value;
+    });
+    hrefNodes.forEach(function (el) {
+      var value = el.dataset["href" + lang.charAt(0).toUpperCase() + lang.slice(1)];
+      if (value !== undefined) el.setAttribute("href", value);
+    });
+    ariaNodes.forEach(function (el) {
+      var value = el.dataset["aria" + lang.charAt(0).toUpperCase() + lang.slice(1)];
+      if (value !== undefined) el.setAttribute("aria-label", value);
+    });
+    langToggle.textContent = lang === "en" ? "FR" : "EN";
+    langToggle.setAttribute("aria-label", lang === "en" ? "Switch to French" : "Passer en anglais");
+    try { localStorage.setItem("lang", lang); } catch (e) { }
+  }
+
+  var savedLang = "en";
+  try { savedLang = localStorage.getItem("lang") || "en"; } catch (e) { }
+  applyLang(savedLang);
+
+  langToggle.addEventListener("click", function () {
+    var next = document.documentElement.lang === "en" ? "fr" : "en";
+    applyLang(next);
+  });
+
   /* ----- Footer year ----- */
   document.getElementById("year").textContent = new Date().getFullYear();
 })();

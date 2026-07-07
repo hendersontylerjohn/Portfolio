@@ -23,15 +23,16 @@
   <header class="nav" id="top">
     <nav class="nav__inner container">
       <a href="#top" class="nav__logo">TH<span class="accent">.</span></a>
-      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <button class="nav__toggle i18n-aria" aria-label="Toggle menu" data-aria-en="Toggle menu" data-aria-fr="Basculer le menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact" class="nav__cta">Contact</a></li>
+        <li><a href="#about" class="i18n" data-en="About" data-fr="À propos">About</a></li>
+        <li><a href="#experience" class="i18n" data-en="Experience" data-fr="Expérience">Experience</a></li>
+        <li><a href="#projects" class="i18n" data-en="Projects" data-fr="Projets">Projects</a></li>
+        <li><a href="#skills" class="i18n" data-en="Skills" data-fr="Compétences">Skills</a></li>
+        <li><a href="#contact" class="nav__cta i18n" data-en="Contact" data-fr="Contact">Contact</a></li>
+        <li><button id="langToggle" class="nav__lang" type="button" aria-label="Switch language">FR</button></li>
       </ul>
     </nav>
   </header>
@@ -42,16 +43,20 @@
     <section class="hero">
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="container hero__content">
-        <p class="hero__kicker fade-up">Fenestration &amp; Building Science</p>
+        <p class="hero__kicker fade-up i18n" data-en="Fenestration &amp; Building Science" data-fr="Fenestration et science du bâtiment">Fenestration &amp; Building Science</p>
         <h1 class="hero__name fade-up delay-1">Tyler Henderson</h1>
-        <h2 class="hero__title fade-up delay-2">Fenestration Technical Lead<span class="accent">.</span></h2>
-        <p class="hero__tagline fade-up delay-3">
+        <h2 class="hero__title fade-up delay-2"><span class="i18n" data-en="Fenestration Technical Lead" data-fr="Responsable technique en fenestration">Fenestration Technical Lead</span><span class="accent">.</span></h2>
+        <p class="hero__tagline fade-up delay-3 i18n"
+           data-en="NFRC compliance &amp; standards strategy, thermal simulation, and automation that cuts certification turnaround from <em>weeks to days</em>."
+           data-fr="Conformité NFRC et stratégie normative, simulation thermique, et automatisation qui réduit les délais de certification de <em>plusieurs semaines à quelques jours</em>.">
           NFRC compliance &amp; standards strategy, thermal simulation, and automation
           that cuts certification turnaround from <em>weeks to days</em>.
         </p>
         <div class="hero__actions fade-up delay-4">
-          <a href="assets/Tyler-Henderson-Resume.pdf" target="_blank" rel="noopener" class="btn btn--primary">View Resume</a>
-          <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+          <a href="assets/Tyler%20Henderson%20-%20Resume%202026%20EN.pdf" target="_blank" rel="noopener" class="btn btn--primary i18n i18n-href"
+             data-en="View Resume" data-fr="Voir le CV"
+             data-href-en="assets/Tyler%20Henderson%20-%20Resume%202026%20EN.pdf" data-href-fr="assets/Tyler%20Henderson%20-%20Resume%202026%20FR.pdf">View Resume</a>
+          <a href="#contact" class="btn btn--ghost i18n" data-en="Get in Touch" data-fr="Me contacter">Get in Touch</a>
         </div>
       </div>
     </section>
@@ -59,21 +64,27 @@
     <!-- ===== About ===== -->
     <section id="about" class="section">
       <div class="container">
-        <h2 class="section__title reveal"><span class="section__num">01</span> About</h2>
+        <h2 class="section__title reveal"><span class="section__num">01</span> <span class="i18n" data-en="About" data-fr="À propos">About</span></h2>
         <div class="about reveal">
-          <p>
+          <p class="i18n"
+             data-en="These days I work in fenestration: windows, glazing, and the codes and simulations that decide how well they perform. That means <strong>NFRC / CSA A440.2 compliance</strong>, thermal simulation, building out ISO/IEC 17065 QMS and EPD/LCA programs, and writing automation that turns multi-week simulation work into a couple of days."
+             data-fr="Aujourd'hui, je travaille dans la fenestration : fenêtres, vitrages, et les codes et simulations qui déterminent leur performance. Concrètement, cela signifie la <strong>conformité NFRC / CSA A440.2</strong>, la simulation thermique, la mise en place de systèmes de gestion de la qualité ISO/IEC 17065 et de programmes DEP/ACV, ainsi que l'écriture d'automatisations qui transforment des semaines de travail de simulation en quelques jours.">
             These days I work in fenestration: windows, glazing, and the codes and simulations that
             decide how well they perform. That means <strong>NFRC / CSA A440.2 compliance</strong>,
             thermal simulation, building out ISO/IEC 17065 QMS and EPD/LCA programs, and writing
             automation that turns multi-week simulation work into a couple of days.
           </p>
-          <p>
+          <p class="i18n"
+             data-en="I got here by a fairly winding road (kitchens, golf course irrigation, a flower farm, drywall, even a stint reffing minor hockey) before circling back to school for engineering and landing in building science. I still like the hands-on stuff; these days that's Python scripts and thermal models instead of pizza ovens and pipe fittings."
+             data-fr="J'y suis arrivé par un chemin plutôt sinueux (cuisines, irrigation de terrain de golf, ferme florale, pose de cloisons sèches, et même un passage comme arbitre de hockey mineur) avant de retourner aux études en génie et d'atterrir en science du bâtiment. J'aime toujours le travail concret ; aujourd'hui, ce sont des scripts Python et des modèles thermiques plutôt que des fours à pizza et des raccords de plomberie.">
             I got here by a fairly winding road (kitchens, golf course irrigation, a flower farm,
             drywall, even a stint reffing minor hockey) before circling back to school for engineering
             and landing in building science. I still like the hands-on stuff; these days that's Python
             scripts and thermal models instead of pizza ovens and pipe fittings.
           </p>
-          <p>
+          <p class="i18n"
+             data-en="I'm active in NFRC's standards process as an <strong>ANS Standards Committee member</strong> and Task Group presenter, where I've presented independent technical research on two-box spacer modeling methodology and validation, and I hold both NFRC LEAFF and Phius Blue Path simulator certifications (see Skills below)."
+             data-fr="Je participe activement au processus normatif de la NFRC en tant que <strong>membre du comité de normes ANS</strong> et présentateur au sein d'un groupe de travail, où j'ai présenté une recherche technique indépendante sur la méthodologie et la validation de la modélisation des intercalaires « two-box », et je détiens les certifications de simulateur NFRC LEAFF et Phius Blue Path (voir Compétences ci-dessous).">
             I'm active in NFRC's standards process as an <strong>ANS Standards Committee member</strong>
             and Task Group presenter, where I've presented independent technical research on two-box
             spacer modeling methodology and validation, and I hold both NFRC LEAFF and Phius Blue Path
@@ -82,15 +93,15 @@
           <div class="about__highlights">
             <div class="highlight">
               <span class="highlight__value">900+</span>
-              <span class="highlight__label">Full-frame simulations in published spacer research</span>
+              <span class="highlight__label i18n" data-en="Full-frame simulations in published spacer research" data-fr="Simulations complètes dans une recherche publiée sur les intercalaires">Full-frame simulations in published spacer research</span>
             </div>
             <div class="highlight">
               <span class="highlight__value">10×</span>
-              <span class="highlight__label">Faster project turnaround via Python automation</span>
+              <span class="highlight__label i18n" data-en="Faster project turnaround via Python automation" data-fr="Délai de projet plus rapide grâce à l'automatisation Python">Faster project turnaround via Python automation</span>
             </div>
             <div class="highlight">
               <span class="highlight__value">6</span>
-              <span class="highlight__label">EPDs delivered launching a new LCA service line</span>
+              <span class="highlight__label i18n" data-en="EPDs delivered launching a new LCA service line" data-fr="DEP livrées, lancement d'une nouvelle offre de services ACV">EPDs delivered launching a new LCA service line</span>
             </div>
           </div>
         </div>
@@ -100,22 +111,36 @@
     <!-- ===== Experience ===== -->
     <section id="experience" class="section section--alt">
       <div class="container">
-        <h2 class="section__title reveal"><span class="section__num">02</span> Experience</h2>
+        <h2 class="section__title reveal"><span class="section__num">02</span> <span class="i18n" data-en="Experience" data-fr="Expérience">Experience</span></h2>
         <div class="timeline">
 
           <article class="timeline__item reveal">
             <div class="timeline__marker" aria-hidden="true"></div>
             <div class="timeline__card">
-              <span class="timeline__date">Jan 2024 - Jan 2026</span>
-              <h3 class="timeline__role">Technical Solutions Lead <span class="timeline__sub">(R&amp;D &amp; Strategy)</span></h3>
+              <span class="timeline__date i18n" data-en="Jan 2024 - Jan 2026" data-fr="Janv. 2024 - janv. 2026">Jan 2024 - Jan 2026</span>
+              <h3 class="timeline__role i18n"
+                  data-en="Technical Solutions Lead <span class='timeline__sub'>(R&amp;D &amp; Strategy)</span>"
+                  data-fr="Responsable des solutions techniques <span class='timeline__sub'>(R-D et stratégie)</span>">Technical Solutions Lead <span class="timeline__sub">(R&amp;D &amp; Strategy)</span></h3>
               <p class="timeline__company">Layton Consulting Ltd.</p>
               <ul class="timeline__points">
-                <li>Engaged the Standards Council of Canada to initiate <strong>ISO/IEC 17065 accreditation</strong>: gap analysis, QMS design and implementation, and a roadmap to certification-body eligibility.</li>
-                <li>Launched an <strong>EPD/LCA service line</strong> from the ground up, delivering 6 EPDs for a major Ontario aluminum window manufacturer using OneClick LCA, a new revenue line for the firm.</li>
-                <li>Architected a web-based <strong>simulation database platform</strong> (Next.js/Supabase) cataloguing all historical project simulations with automated spreadsheet and reporting integration.</li>
-                <li>Built <strong>Python automation tools</strong> that cut project turnaround by an order of magnitude, shrinking multi-week simulation engagements to days and unlocking high-volume certification revenue.</li>
-                <li>Defined NFRC-compliant simulation <strong>SOPs</strong> for complex glazing products, ensuring full traceability across projects.</li>
-                <li>Led technical feasibility analysis for long-term initiatives including LCA/EPD implementation and data governance &amp; privacy risk.</li>
+                <li class="i18n"
+                    data-en="Engaged the Standards Council of Canada to initiate <strong>ISO/IEC 17065 accreditation</strong>: gap analysis, QMS design and implementation, and a roadmap to certification-body eligibility."
+                    data-fr="Mobilisation du Conseil canadien des normes pour amorcer l'<strong>accréditation ISO/IEC 17065</strong> : analyse des écarts, conception et mise en œuvre d'un SGQ, et feuille de route vers l'admissibilité comme organisme de certification.">Engaged the Standards Council of Canada to initiate <strong>ISO/IEC 17065 accreditation</strong>: gap analysis, QMS design and implementation, and a roadmap to certification-body eligibility.</li>
+                <li class="i18n"
+                    data-en="Launched an <strong>EPD/LCA service line</strong> from the ground up, delivering 6 EPDs for a major Ontario aluminum window manufacturer using OneClick LCA, a new revenue line for the firm."
+                    data-fr="Lancement complet d'une <strong>offre de services DEP/ACV</strong>, avec la livraison de 6 DEP pour un important fabricant de fenêtres en aluminium de l'Ontario à l'aide de OneClick LCA, une nouvelle source de revenus pour l'entreprise.">Launched an <strong>EPD/LCA service line</strong> from the ground up, delivering 6 EPDs for a major Ontario aluminum window manufacturer using OneClick LCA, a new revenue line for the firm.</li>
+                <li class="i18n"
+                    data-en="Architected a web-based <strong>simulation database platform</strong> (Next.js/Supabase) cataloguing all historical project simulations with automated spreadsheet and reporting integration."
+                    data-fr="Conception d'une <strong>plateforme web de base de données de simulations</strong> (Next.js/Supabase) répertoriant l'ensemble des simulations historiques des projets, avec intégration automatisée aux feuilles de calcul et aux rapports.">Architected a web-based <strong>simulation database platform</strong> (Next.js/Supabase) cataloguing all historical project simulations with automated spreadsheet and reporting integration.</li>
+                <li class="i18n"
+                    data-en="Built <strong>Python automation tools</strong> that cut project turnaround by an order of magnitude, shrinking multi-week simulation engagements to days and unlocking high-volume certification revenue."
+                    data-fr="Développement d'<strong>outils d'automatisation en Python</strong> réduisant les délais de projet d'un ordre de grandeur, transformant des mandats de simulation de plusieurs semaines en quelques jours et débloquant des revenus de certification à fort volume.">Built <strong>Python automation tools</strong> that cut project turnaround by an order of magnitude, shrinking multi-week simulation engagements to days and unlocking high-volume certification revenue.</li>
+                <li class="i18n"
+                    data-en="Defined NFRC-compliant simulation <strong>SOPs</strong> for complex glazing products, ensuring full traceability across projects."
+                    data-fr="Définition de <strong>procédures normalisées</strong> de simulation conformes à la NFRC pour des produits vitrés complexes, assurant une traçabilité complète entre les projets.">Defined NFRC-compliant simulation <strong>SOPs</strong> for complex glazing products, ensuring full traceability across projects.</li>
+                <li class="i18n"
+                    data-en="Led technical feasibility analysis for long-term initiatives including LCA/EPD implementation and data governance &amp; privacy risk."
+                    data-fr="Direction d'analyses de faisabilité technique pour des initiatives à long terme, y compris la mise en œuvre ACV/DEP et la gouvernance des données et les risques liés à la vie privée.">Led technical feasibility analysis for long-term initiatives including LCA/EPD implementation and data governance &amp; privacy risk.</li>
               </ul>
             </div>
           </article>
@@ -123,13 +148,19 @@
           <article class="timeline__item reveal">
             <div class="timeline__marker" aria-hidden="true"></div>
             <div class="timeline__card">
-              <span class="timeline__date">Aug 2023 - Jan 2024</span>
-              <h3 class="timeline__role">Fabrication Process Specialist &amp; CNC Lead</h3>
+              <span class="timeline__date i18n" data-en="Aug 2023 - Jan 2024" data-fr="Août 2023 - janv. 2024">Aug 2023 - Jan 2024</span>
+              <h3 class="timeline__role i18n" data-en="Fabrication Process Specialist &amp; CNC Lead" data-fr="Spécialiste des procédés de fabrication et responsable CNC">Fabrication Process Specialist &amp; CNC Lead</h3>
               <p class="timeline__company">Glastech Glazing Contractors Ltd.</p>
               <ul class="timeline__points">
-                <li>Programmed and optimized RhinoFab1100 and Emmegisoft <strong>3-axis CNC workflows</strong> for precision curtain wall fabrication.</li>
-                <li>Redesigned warehouse layout and production flow to minimize material handling and increase throughput.</li>
-                <li>Developed training protocols for staff on CNC operation and automated fabrication logic.</li>
+                <li class="i18n"
+                    data-en="Programmed and optimized RhinoFab1100 and Emmegisoft <strong>3-axis CNC workflows</strong> for precision curtain wall fabrication."
+                    data-fr="Programmation et optimisation des flux <strong>CNC 3 axes</strong> RhinoFab1100 et Emmegisoft pour la fabrication de précision de murs-rideaux.">Programmed and optimized RhinoFab1100 and Emmegisoft <strong>3-axis CNC workflows</strong> for precision curtain wall fabrication.</li>
+                <li class="i18n"
+                    data-en="Redesigned warehouse layout and production flow to minimize material handling and increase throughput."
+                    data-fr="Réaménagement de l'entrepôt et du flux de production afin de réduire la manutention des matériaux et d'augmenter le débit.">Redesigned warehouse layout and production flow to minimize material handling and increase throughput.</li>
+                <li class="i18n"
+                    data-en="Developed training protocols for staff on CNC operation and automated fabrication logic."
+                    data-fr="Élaboration de protocoles de formation du personnel sur l'utilisation des CNC et la logique de fabrication automatisée.">Developed training protocols for staff on CNC operation and automated fabrication logic.</li>
               </ul>
             </div>
           </article>
@@ -138,10 +169,14 @@
             <div class="timeline__marker" aria-hidden="true"></div>
             <div class="timeline__card">
               <span class="timeline__date">2021 - 2023</span>
-              <h3 class="timeline__role">Engineering Studies <span class="timeline__sub">(Electrical Engineering)</span></h3>
+              <h3 class="timeline__role i18n"
+                  data-en="Engineering Studies <span class='timeline__sub'>(Electrical Engineering)</span>"
+                  data-fr="Études en génie <span class='timeline__sub'>(génie électrique)</span>">Engineering Studies <span class="timeline__sub">(Electrical Engineering)</span></h3>
               <p class="timeline__company">University of British Columbia, Okanagan</p>
               <ul class="timeline__points">
-                <li>Studied electromagnetism &amp; optics, circuit design, embedded systems, and SolidWorks modeling.</li>
+                <li class="i18n"
+                    data-en="Studied electromagnetism &amp; optics, circuit design, embedded systems, and SolidWorks modeling."
+                    data-fr="Étude de l'électromagnétisme et de l'optique, de la conception de circuits, des systèmes embarqués et de la modélisation SolidWorks.">Studied electromagnetism &amp; optics, circuit design, embedded systems, and SolidWorks modeling.</li>
               </ul>
             </div>
           </article>
@@ -149,17 +184,17 @@
         </div>
 
         <div class="prior-roles reveal">
-          <h3 class="prior-roles__heading">Before Fenestration</h3>
-          <p class="prior-roles__intro">The path here wasn't exactly a straight line.</p>
+          <h3 class="prior-roles__heading i18n" data-en="Before Fenestration" data-fr="Avant la fenestration">Before Fenestration</h3>
+          <p class="prior-roles__intro i18n" data-en="The path here wasn't exactly a straight line." data-fr="Le chemin jusqu'ici n'a pas été tout à fait une ligne droite.">The path here wasn't exactly a straight line.</p>
           <ul class="prior-roles__list">
-            <li><span class="prior-roles__role">Irrigation Installer</span><span class="prior-roles__place">Penticton Golf Course irrigation renovation (installation &amp; electrical hookups)</span></li>
-            <li><span class="prior-roles__role">Garde Manger</span><span class="prior-roles__place">Sonora Room at Burrowing Owl (cold station, desserts &amp; amuse bouches)</span></li>
-            <li><span class="prior-roles__role">Pizza Chef</span><span class="prior-roles__place">Bad Tattoo</span></li>
-            <li><span class="prior-roles__role">Groundskeeper</span><span class="prior-roles__place">Linden Gardens (5 acres of flower gardens &amp; weddings)</span></li>
-            <li><span class="prior-roles__role">Referee</span><span class="prior-roles__place">Penticton Minor Hockey Association</span></li>
-            <li><span class="prior-roles__role">Warehouse Assistant</span><span class="prior-roles__place">Burrowing Owl (wine bottling)</span></li>
-            <li><span class="prior-roles__role">Electronics Technician</span><span class="prior-roles__place">SOTA Instruments (testing electronic units)</span></li>
-            <li><span class="prior-roles__role">Drywall Labourer</span></li>
+            <li><span class="prior-roles__role i18n" data-en="Irrigation Installer" data-fr="Installateur d'irrigation">Irrigation Installer</span><span class="prior-roles__place i18n" data-en="Penticton Golf Course irrigation renovation (installation &amp; electrical hookups)" data-fr="Rénovation du système d'irrigation du terrain de golf de Penticton (installation et raccordements électriques)">Penticton Golf Course irrigation renovation (installation &amp; electrical hookups)</span></li>
+            <li><span class="prior-roles__role i18n" data-en="Garde Manger" data-fr="Garde-manger">Garde Manger</span><span class="prior-roles__place i18n" data-en="Sonora Room at Burrowing Owl (cold station, desserts &amp; amuse bouches)" data-fr="Sonora Room au Burrowing Owl (poste froid, desserts et amuse-bouches)">Sonora Room at Burrowing Owl (cold station, desserts &amp; amuse bouches)</span></li>
+            <li><span class="prior-roles__role i18n" data-en="Pizza Chef" data-fr="Chef pizzaïolo">Pizza Chef</span><span class="prior-roles__place">Bad Tattoo</span></li>
+            <li><span class="prior-roles__role i18n" data-en="Groundskeeper" data-fr="Jardinier-paysagiste">Groundskeeper</span><span class="prior-roles__place i18n" data-en="Linden Gardens (5 acres of flower gardens &amp; weddings)" data-fr="Linden Gardens (5 acres de jardins floraux et de mariages)">Linden Gardens (5 acres of flower gardens &amp; weddings)</span></li>
+            <li><span class="prior-roles__role i18n" data-en="Referee" data-fr="Arbitre">Referee</span><span class="prior-roles__place i18n" data-en="Penticton Minor Hockey Association" data-fr="Association de hockey mineur de Penticton">Penticton Minor Hockey Association</span></li>
+            <li><span class="prior-roles__role i18n" data-en="Warehouse Assistant" data-fr="Adjoint d'entrepôt">Warehouse Assistant</span><span class="prior-roles__place i18n" data-en="Burrowing Owl (wine bottling)" data-fr="Burrowing Owl (embouteillage de vin)">Burrowing Owl (wine bottling)</span></li>
+            <li><span class="prior-roles__role i18n" data-en="Electronics Technician" data-fr="Technicien en électronique">Electronics Technician</span><span class="prior-roles__place i18n" data-en="SOTA Instruments (testing electronic units)" data-fr="SOTA Instruments (essai d'appareils électroniques)">SOTA Instruments (testing electronic units)</span></li>
+            <li><span class="prior-roles__role i18n" data-en="Drywall Labourer" data-fr="Manœuvre en cloisons sèches">Drywall Labourer</span></li>
           </ul>
         </div>
       </div>
@@ -168,7 +203,7 @@
     <!-- ===== Projects ===== -->
     <section id="projects" class="section">
       <div class="container">
-        <h2 class="section__title reveal"><span class="section__num">03</span> Projects &amp; Research</h2>
+        <h2 class="section__title reveal"><span class="section__num">03</span> <span class="i18n" data-en="Projects &amp; Research" data-fr="Projets et recherche">Projects &amp; Research</span></h2>
         <div class="projects">
 
           <article class="card reveal">
@@ -177,20 +212,22 @@
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
               </span>
               <div class="card__links">
-                <a href="assets/Two-Box-Spacer-Modeling-Report.pdf" target="_blank" rel="noopener" aria-label="Read the technical report (PDF)">
+                <a href="assets/Two-Box-Spacer-Modeling-Report.pdf" target="_blank" rel="noopener" class="i18n-aria" aria-label="Read the technical report (PDF)" data-aria-en="Read the technical report (PDF)" data-aria-fr="Lire le rapport technique (PDF)">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>
                 </a>
               </div>
             </div>
-            <h3 class="card__title">Two-Box Spacer Modeling Validation</h3>
-            <p class="card__desc">
+            <h3 class="card__title i18n" data-en="Two-Box Spacer Modeling Validation" data-fr="Validation de la modélisation des intercalaires « two-box »">Two-Box Spacer Modeling Validation</h3>
+            <p class="card__desc i18n"
+               data-en="Independent technical report evaluating two-box spacer calibration strategies against detailed spacer models using LBNL THERM and NFRC 100/200/500 methodology: 900 full-frame simulations across 3 spacer families and 25 widths (8-20&nbsp;mm), holding U-factor deviations within ~0.008&nbsp;W/m²·K. Presented to the NFRC Simulators Task Group."
+               data-fr="Rapport technique indépendant évaluant des stratégies d'étalonnage d'intercalaires « two-box » par rapport à des modèles d'intercalaires détaillés, selon la méthodologie LBNL THERM et NFRC 100/200/500 : 900 simulations complètes réparties sur 3 familles d'intercalaires et 25 largeurs (8-20&nbsp;mm), maintenant les écarts du facteur U à environ 0,008&nbsp;W/m²·K. Présenté au groupe de travail des simulateurs de la NFRC.">
               Independent technical report evaluating two-box spacer calibration strategies against detailed
               spacer models using LBNL THERM and NFRC 100/200/500 methodology: 900 full-frame simulations
               across 3 spacer families and 25 widths (8-20&nbsp;mm), holding U-factor deviations within
               ~0.008&nbsp;W/m²·K. Presented to the NFRC Simulators Task Group.
             </p>
             <ul class="card__tags">
-              <li>LBNL THERM</li><li>NFRC 100/200/500</li><li>Research</li>
+              <li>LBNL THERM</li><li>NFRC 100/200/500</li><li class="i18n" data-en="Research" data-fr="Recherche">Research</li>
             </ul>
           </article>
 
@@ -200,19 +237,21 @@
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
               </span>
               <div class="card__links">
-                <a href="https://github.com/hendersontylerjohn/NFRC-101-Materials" target="_blank" rel="noopener" aria-label="NFRC-101-Materials on GitHub">
+                <a href="https://github.com/hendersontylerjohn/NFRC-101-Materials" target="_blank" rel="noopener" class="i18n-aria" aria-label="NFRC-101-Materials on GitHub" data-aria-en="NFRC-101-Materials on GitHub" data-aria-fr="NFRC-101-Materials sur GitHub">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.26 5.68.41.35.78 1.05.78 2.12v3.14c0 .3.21.67.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
                 </a>
               </div>
             </div>
             <h3 class="card__title">NFRC-101-Materials</h3>
-            <p class="card__desc">
+            <p class="card__desc i18n"
+               data-en="Automated pipeline that monitors, parses, and validates NFRC&nbsp;101 material property tables (Appendices A, B, C) from the published PDF, syncing them into structured, versioned JSON via a scheduled GitHub Actions workflow."
+               data-fr="Pipeline automatisé qui surveille, analyse et valide les tableaux de propriétés des matériaux de la norme NFRC&nbsp;101 (annexes A, B, C) à partir du PDF publié, et les synchronise dans un format JSON structuré et versionné via un flux de travail GitHub Actions planifié.">
               Automated pipeline that monitors, parses, and validates NFRC&nbsp;101 material property tables
               (Appendices A, B, C) from the published PDF, syncing them into structured, versioned JSON via
               a scheduled GitHub Actions workflow.
             </p>
             <ul class="card__tags">
-              <li>Python</li><li>GitHub Actions</li><li>Data Pipeline</li>
+              <li>Python</li><li>GitHub Actions</li><li class="i18n" data-en="Data Pipeline" data-fr="Pipeline de données">Data Pipeline</li>
             </ul>
           </article>
 
@@ -222,19 +261,21 @@
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l6-6-6-6M12 19h8"/></svg>
               </span>
               <div class="card__links">
-                <a href="https://github.com/hendersontylerjohn/Thm-Reader" target="_blank" rel="noopener" aria-label="Thm-Reader on GitHub">
+                <a href="https://github.com/hendersontylerjohn/Thm-Reader" target="_blank" rel="noopener" class="i18n-aria" aria-label="Thm-Reader on GitHub" data-aria-en="Thm-Reader on GitHub" data-aria-fr="Thm-Reader sur GitHub">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.26 5.68.41.35.78 1.05.78 2.12v3.14c0 .3.21.67.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
                 </a>
               </div>
             </div>
             <h3 class="card__title">Thm-Reader</h3>
-            <p class="card__desc">
+            <p class="card__desc i18n"
+               data-en="Rust library for reading and writing THERM 7.x binary <code>.thm</code> files, with typed access to header, polygon, and IGU/glazing data plus the material, boundary-condition, and gas libraries, with round-trip byte-accurate serialization and JSON export."
+               data-fr="Bibliothèque Rust pour la lecture et l'écriture de fichiers binaires THERM 7.x (<code>.thm</code>), avec accès typé aux données d'en-tête, de polygones et d'IGU/vitrage, ainsi qu'aux bibliothèques de matériaux, de conditions limites et de gaz, avec sérialisation fidèle bit à bit (aller-retour) et export JSON.">
               Rust library for reading and writing THERM 7.x binary <code>.thm</code> files, with typed access to
               header, polygon, and IGU/glazing data plus the material, boundary-condition, and gas libraries,
               with round-trip byte-accurate serialization and JSON export.
             </p>
             <ul class="card__tags">
-              <li>Rust</li><li>Binary Parsing</li><li>Open Source</li>
+              <li>Rust</li><li class="i18n" data-en="Binary Parsing" data-fr="Analyse binaire">Binary Parsing</li><li>Open Source</li>
             </ul>
           </article>
 
@@ -244,8 +285,10 @@
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
               </span>
             </div>
-            <h3 class="card__title">Simulation Database Platform</h3>
-            <p class="card__desc">
+            <h3 class="card__title i18n" data-en="Simulation Database Platform" data-fr="Plateforme de base de données de simulation">Simulation Database Platform</h3>
+            <p class="card__desc i18n"
+               data-en="Web-based simulation database (Next.js/Supabase) cataloguing all historical project simulations, with automatic integration into calculation spreadsheets and reporting workflows."
+               data-fr="Base de données de simulation web (Next.js/Supabase) répertoriant l'ensemble des simulations historiques des projets, avec intégration automatique aux feuilles de calcul et aux flux de rapport.">
               Web-based simulation database (Next.js/Supabase) cataloguing all historical project simulations,
               with automatic integration into calculation spreadsheets and reporting workflows.
             </p>
@@ -261,49 +304,49 @@
     <!-- ===== Skills ===== -->
     <section id="skills" class="section section--alt">
       <div class="container">
-        <h2 class="section__title reveal"><span class="section__num">04</span> Skills</h2>
+        <h2 class="section__title reveal"><span class="section__num">04</span> <span class="i18n" data-en="Skills" data-fr="Compétences">Skills</span></h2>
         <div class="skills">
 
           <div class="skills__group reveal">
-            <h3 class="skills__heading">Engineering Simulation</h3>
+            <h3 class="skills__heading i18n" data-en="Engineering Simulation" data-fr="Simulation en ingénierie">Engineering Simulation</h3>
             <ul class="pills">
-              <li>LBNL THERM &amp; WINDOW <span class="pill__note">Advanced</span></li>
+              <li>LBNL THERM &amp; WINDOW <span class="pill__note i18n" data-en="Advanced" data-fr="Avancé">Advanced</span></li>
               <li>Flixo</li>
               <li>Physibel</li>
               <li>NFRC / CSA A440.2</li>
-              <li>Passive House Methodology</li>
+              <li class="i18n" data-en="Passive House Methodology" data-fr="Méthodologie Passive House">Passive House Methodology</li>
             </ul>
           </div>
 
           <div class="skills__group reveal">
-            <h3 class="skills__heading">Compliance &amp; Sustainability</h3>
+            <h3 class="skills__heading i18n" data-en="Compliance &amp; Sustainability" data-fr="Conformité et développement durable">Compliance &amp; Sustainability</h3>
             <ul class="pills">
-              <li>ISO/IEC 17065 QMS</li>
-              <li>OneClick LCA · EPD Generation</li>
-              <li>Certification Strategy</li>
-              <li>Standards Development</li>
+              <li class="i18n" data-en="ISO/IEC 17065 QMS" data-fr="SGQ ISO/IEC 17065">ISO/IEC 17065 QMS</li>
+              <li class="i18n" data-en="OneClick LCA &middot; EPD Generation" data-fr="OneClick LCA &middot; Génération de DEP">OneClick LCA &middot; EPD Generation</li>
+              <li class="i18n" data-en="Certification Strategy" data-fr="Stratégie de certification">Certification Strategy</li>
+              <li class="i18n" data-en="Standards Development" data-fr="Élaboration de normes">Standards Development</li>
             </ul>
           </div>
 
           <div class="skills__group reveal">
-            <h3 class="skills__heading">Automation &amp; Data</h3>
+            <h3 class="skills__heading i18n" data-en="Automation &amp; Data" data-fr="Automatisation et données">Automation &amp; Data</h3>
             <ul class="pills">
               <li>Python</li>
               <li>Rust</li>
               <li>SQL / ODBC</li>
-              <li>Binary File Parsing</li>
+              <li class="i18n" data-en="Binary File Parsing" data-fr="Analyse de fichiers binaires">Binary File Parsing</li>
               <li>Next.js / Supabase</li>
               <li>GitHub Actions</li>
             </ul>
           </div>
 
           <div class="skills__group reveal">
-            <h3 class="skills__heading">Certifications &amp; Standards Roles</h3>
+            <h3 class="skills__heading i18n" data-en="Certifications &amp; Standards Roles" data-fr="Certifications et rôles normatifs">Certifications &amp; Standards Roles</h3>
             <ul class="pills">
-              <li><a href="https://cdn.ymaws.com/nfrccommunity.org/resource/resmgr/certificates/2026_lcs/THenderson_LCS-25-0143.pdf" target="_blank" rel="noopener">NFRC LEAFF Certified Simulator <span class="pill__verify">↗</span></a></li>
-              <li><a href="https://www.phius.org/contact-phius-blue-path-simulator" target="_blank" rel="noopener">Phius Blue Path Certified Simulator <span class="pill__verify">↗</span></a></li>
-              <li>NFRC ANS Standards Committee Member</li>
-              <li>NFRC Simulators Task Group Presenter</li>
+              <li><a href="https://cdn.ymaws.com/nfrccommunity.org/resource/resmgr/certificates/2026_lcs/THenderson_LCS-25-0143.pdf" target="_blank" rel="noopener"><span class="i18n" data-en="NFRC LEAFF Certified Simulator" data-fr="Simulateur certifié NFRC LEAFF">NFRC LEAFF Certified Simulator</span> <span class="pill__verify">↗</span></a></li>
+              <li><a href="https://www.phius.org/contact-phius-blue-path-simulator" target="_blank" rel="noopener"><span class="i18n" data-en="Phius Blue Path Certified Simulator" data-fr="Simulateur certifié Phius Blue Path">Phius Blue Path Certified Simulator</span> <span class="pill__verify">↗</span></a></li>
+              <li class="i18n" data-en="NFRC ANS Standards Committee Member" data-fr="Membre du comité de normes ANS de la NFRC">NFRC ANS Standards Committee Member</li>
+              <li class="i18n" data-en="NFRC Simulators Task Group Presenter" data-fr="Présentateur au groupe de travail des simulateurs NFRC">NFRC Simulators Task Group Presenter</li>
             </ul>
           </div>
 
@@ -314,8 +357,10 @@
     <!-- ===== Contact ===== -->
     <section id="contact" class="section contact">
       <div class="container contact__inner reveal">
-        <h2 class="contact__title">Let's talk<span class="accent">.</span></h2>
-        <p class="contact__blurb">
+        <h2 class="contact__title"><span class="i18n" data-en="Let's talk" data-fr="Discutons">Let's talk</span><span class="accent">.</span></h2>
+        <p class="contact__blurb i18n"
+           data-en="Whether it's certification strategy, simulation automation, or standards work, I'm always open to a conversation."
+           data-fr="Qu'il s'agisse de stratégie de certification, d'automatisation de simulation ou de travail normatif, je suis toujours ouvert à la conversation.">
           Whether it's certification strategy, simulation automation, or standards work,
           I'm always open to a conversation.
         </p>
@@ -327,11 +372,11 @@
           <a href="https://linkedin.com/in/hendersontylerjohn" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
           </a>
-          <a href="assets/Tyler-Henderson-Resume.pdf" target="_blank" rel="noopener" aria-label="Resume (PDF)">
+          <a href="assets/Tyler%20Henderson%20-%20Resume%202026%20EN.pdf" target="_blank" rel="noopener" class="i18n-aria i18n-href" aria-label="Resume (PDF)" data-aria-en="Resume (PDF)" data-aria-fr="CV (PDF)" data-href-en="assets/Tyler%20Henderson%20-%20Resume%202026%20EN.pdf" data-href-fr="assets/Tyler%20Henderson%20-%20Resume%202026%20FR.pdf">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></svg>
           </a>
         </div>
-        <p class="contact__location">British Columbia, Canada</p>
+        <p class="contact__location i18n" data-en="British Columbia, Canada" data-fr="Colombie-Britannique, Canada">British Columbia, Canada</p>
       </div>
     </section>
 
@@ -339,7 +384,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year">2026</span> Tyler Henderson · Built with plain HTML, CSS &amp; JS</p>
+      <p>© <span id="year">2026</span> Tyler Henderson · <span class="i18n" data-en="Built with plain HTML, CSS &amp; JS" data-fr="Conçu avec HTML, CSS et JS pur">Built with plain HTML, CSS &amp; JS</span></p>
     </div>
   </footer>
 

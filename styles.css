@@ -128,6 +128,19 @@ code {
   transition: background 0.2s, color 0.2s;
 }
 .nav__links .nav__cta:hover { background: var(--accent); color: var(--accent-contrast); }
+.nav__links .nav__lang {
+  font-family: inherit;
+  background: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+.nav__links .nav__lang:hover { border-color: var(--accent); color: var(--accent); }
 
 /* Hamburger (mobile) */
 .nav__toggle {
@@ -169,6 +182,7 @@ code {
   .nav__links li { width: 100%; text-align: center; }
   .nav__links a { display: block; padding: 1rem; }
   .nav__links .nav__cta { border: none; margin: 0; }
+  .nav__links .nav__lang { display: block; width: 100%; border: none; padding: 1rem; }
 }
 
 /* ===== Hero ===== */
