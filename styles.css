@@ -587,6 +587,14 @@ code {
   font-size: 0.83rem;
   color: var(--text-muted);
 }
+.footer__disclaimer {
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  opacity: 0.75;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* ===== Reduced motion ===== */
 @media (prefers-reduced-motion: reduce) {
